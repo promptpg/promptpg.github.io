@@ -99,7 +99,7 @@
         <!-- <hr> -->
         <div class="section">
             <div id="dataset" class="anchor"></div>
-            <h1>TabMWP Dataset</h1>
+            <h1>The TabMWP Dataset</h1>
             <p>
                 Below are two examples from the TabMWP dataset. One example is a free-text problem with a
                 numerical answer and the other one is a multi-choice problem with a textual answer.
@@ -149,7 +149,7 @@
         <!-- <hr> -->
         <div class="section">
             <div id="method" class="anchor"></div>
-            <h1>Method</h1>
+            <h1>The PromptPG Method</h1>
             <p>
                 Given a tabular context and question text, the task is to generate an answer. The large pre-trained
                 language model GPT-3 model exhibits strong performance on solving math word problems with the
@@ -163,7 +163,7 @@
                 To alleviate this challenge, we further propose a novel approach that can learn to select in-context
                 examples from a small amount of training data via <strong>policy Gradient</strong> for prompt
                 learning, termed
-                PromptPG.
+                <strong>PromptPG</strong>.
                 An agent learns to find optimal in-context examples from a candidate pool,
                 with the goal of maximizing the prediction rewards on given training examples when interacting with
                 the
@@ -172,12 +172,6 @@
             <div id="example-box">
                 <img class="example-img" src="img/algorithm.png" style="width: 90%" alt="prompt.png" />
             </div>
-            <p>
-                The few-shot GPT-3 model (CoT) achieves a state-of-the-art accuracy of 75.17% on PromptPG.
-                One prediction example is visualized bellow. We can see that GPT-3 (CoT)
-                predicts the correct answer and generates a reasonable lecture and explanation to mimic the human
-                thought process.
-            </p>
             <p>
                 Below shows the <a class="correct">correct</a> prediction from the few-shot GPT-3 model with PromptPG
                 for a free-text question
