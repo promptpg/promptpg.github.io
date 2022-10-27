@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | PromptPG: Prompt Learning via Policy Gradient for Semi-structured Math Reasoning</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <script type="text/javascript" src="javascript/sort-table.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="icon">
+            <img src="img/logo.png" id="nav-icon">
+            <a class="nav-button" href="https://PromptPG.github.io/" style="margin-left: 2px; font-size: 24px">PromptPG
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html#home">Home</a>
+            <a class="nav-button" href="index.html#dataset">Dataset</a>
+            <a class="nav-button" href="index.html#paper">Paper</a>
+            <a class="nav-button" href="index.html#code">Code</a>
+            <a class="nav-button" href="index.html#citation">Citation</a>
+            <a class="nav-button" href="index.html#authors">Authors</a>
+            <a class="nav-button" href="index.html#contact">Contact</a>
+            <a class="nav-button" href="leaderboard.html">Leaderboard</a>
+            <a class="nav-button" href="explore.html">Explore</a>
+            <a class="nav-button" href="visualize.html">Visualize</a>
+        </div>
+    </div>
+    <div id="body">
+        <br><br><br><br>
+        <div class="section">
+            <h1>Leaderboard - TabMWP</h1>
+            <p>
+                Evaluation of different menthods on the <strong>test</strong> split.
+                The accuracies over different classes and on average are reported below.
+            </p>
+            <p>
+                &#128512 You are welcome to contribute your results to the TabMWP test split! Please fill in this
+                <a href="https://forms.gle/iwEMepqowMkknNvb8" class="ext-link">Google Form
+                </a> to submit your results.
+            </p>
+
+
+            <!-- https://www.cssscript.com/sort-table-header-column/ -->
+            <table class="js-sort-table" id="results">
+                <tr>
+                    <td class="js-sort-number"><strong>Rank</strong></td>
+                    <td class="js-sort-number"><strong>Method</strong></td>
+                    <!-- <td class="js-sort-number"><strong>Learning</strong></td> -->
+                    <td class="js-sort-number"><strong>Sources</strong></td>
+                    <td class="js-sort-number"><strong>Date</strong></td>
+                    <td class="js-sort-number"><strong>NAT</strong></td>
+                    <td class="js-sort-number"><strong>SOC</strong></td>
+                    <td class="js-sort-number"><strong>LAN</strong></td>
+                    <td class="js-sort-number"><strong>TXT</strong></td>
+                    <td class="js-sort-number"><strong>IMG</strong></td>
+                    <td class="js-sort-number"><strong>NO</strong></td>
+                    <td class="js-sort-number"><strong>G1-6</strong></td>
+                    <td class="js-sort-number"><strong>G7-12</strong></td>
+                    <td class="js-sort-number"><strong><u>Avg</u></strong></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td style="text-align: left;">Human</td>
+                    <!-- <td>-</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>90.23</td>
+                    <td>84.97</td>
+                    <td>87.48</td>
+                    <td>89.60</td>
+                    <td>87.50</td>
+                    <td>88.10</td>
+                    <td>91.59</td>
+                    <td>82.42</td>
+                    <td>88.40</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td style="text-align: left;"><strong>GPT-3 - CoT</strong> (QCM→ALE, 2-shot)</td>
+                    <!-- <td>2-shot</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>75.44</td>
+                    <td>70.87</td>
+                    <td>78.09</td>
+                    <td>74.68</td>
+                    <td>67.43</td>
+                    <td>79.93</td>
+                    <td>78.23</td>
+                    <td>69.68</td>
+                    <td>75.17</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td style="text-align: left;"><strong>GPT-3 - CoT</strong> (QCM→A, 2-shot)</td>
+                    <!-- <td>2-shot</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>76.60</td>
+                    <td>65.92</td>
+                    <td>77.55</td>
+                    <td>75.51</td>
+                    <td>66.09</td>
+                    <td>79.58</td>
+                    <td>78.49</td>
+                    <td>67.63</td>
+                    <td>74.61</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td style="text-align: left;"><strong>GPT-3</strong> (QCM→A, 2-shot)</td>
+                    <!-- <td>2-shot</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>74.64</td>
+                    <td>69.74</td>
+                    <td>76.00</td>
+                    <td>74.44</td>
+                    <td>67.28</td>
+                    <td>77.42</td>
+                    <td>76.80</td>
+                    <td>68.89</td>
+                    <td>73.97</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td style="text-align: left;"><strong>GPT-3</strong> (QCM→A, zero-shot)</td>
+                    <!-- <td>zero-shot</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>75.04</td>
+                    <td>66.59</td>
+                    <td>78.00</td>
+                    <td>74.24</td>
+                    <td>65.74</td>
+                    <td>79.58</td>
+                    <td>76.36</td>
+                    <td>69.87</td>
+                    <td>74.04</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td style="text-align: left;">Random chance</td>
+                    <!-- <td>-</td> -->
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
+                            Pan et al., NeurIPS 2022
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>40.28</td>
+                    <td>46.13</td>
+                    <td>29.25</td>
+                    <td>47.45</td>
+                    <td>40.08</td>
+                    <td>33.66</td>
+                    <td>39.35</td>
+                    <td>40.67</td>
+                    <td>39.83</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Method names:</strong>
+                <li>Q = question</li>
+                <li>C = context</li>
+                <li>M = multiple options</li>
+                <li>A = answer</li>
+                <li>AE = answer with explanation</li>
+                <li>ALE = answer with lecture and explanation</li>
+                </li>
+            </p>
+            <p>
+                <strong>Accuracies for different question sets:</strong>
+                <li>NAT: questions of the natural science subject</li>
+                <li>SOC: questions of the social science subject</li>
+                <li>LAN: questions of the language science subject</li>
+                <li>TXT: questions with the text context</li>
+                <li>IMG: questions with the image context</li>
+                <li>NO: questions with no context</li>
+                <li>G1-6: questions in the grade group of 1-6</li>
+                <li>G7-12: questions in the grade group of 7-12</li>
+                <li>Avg: all questions (reporting the average accuracy)</li>
+                </li>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
