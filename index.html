@@ -56,28 +56,42 @@
     <div id="body">
         <div class="section">
             <div id="about" class="anchor"></div>
-            <h1>About PromptPG</h1>
+            <h1>About</h1>
+
+            <p style="line-height: 150%">
+                Recent large pre-trained language models such as GPT-3 have
+                achieved remarkable progress on mathematical reasoning tasks written in text form, such as math word
+                problems (MWP). However, it is unknown if the models can handle more complex problems that involve math
+                reasoning over heterogeneous information, such as tabular data. To fill the gap, we present
+                <strong>Tabular Math
+                    Word Problems (TabMWP)
+                </strong>, a new dataset containing 38,431 open-domain grade-level problems that
+                require
+                mathematical reasoning on both textual and tabular data. Each question in TabMWP is aligned with a
+                tabular context, which is presented as an image, semi-structured text, and a structured table. There
+                are
+                two types of questions: free-text and multi-choice, and each problem is annotated with gold
+                solutions to
+                reveal the multi-step reasoning process.
+            </p>
             <div id="example-box">
                 <img class="example-img" src="img/PromptPG.png" alt="PromptPG.png">
             </div>
             <p style="line-height: 150%">
-                When answering a question, humans utilize the information available across different modalities to
-                synthesize a consistent and complete chain of thought (CoT). This process is normally a
-                black box in the
-                case of deep learning models like large-scale language models. Recently, science question benchmarks
-                have been used to diagnose the multi-hop reasoning ability and interpretability of an AI system.
-                However, existing datasets fail to provide annotations for the answers, or are restricted to the
-                textual-only modality, small scales, and limited domain diversity.
-                To this end, we present <strong>Science Question Answering (PromptPG)</strong>, a new benchmark
-                that consists of ~21k multimodal multiple choice questions with a diverse set of
-                <i>science</i> topics and
-                annotations of their answers with corresponding <i>lectures</i> and <i>explanations</i>. We further
-                design language
-                models to learn to generate lectures and explanations as <strong>the chain of thought (CoT)</strong> to
-                mimic the
-                multi-hop reasoning process when answering PromptPG questions. PromptPG demonstrates the utility of
-                CoT in language models, as CoT improves the question answering performance by 1.20% in few-shot GPT-3
-                and 3.99% in fine-tuned UnifiedQA.
+                We evaluate different pre-trained models on TabMWP, including
+                the GPT-3 model in a few-shot setting. As earlier studies suggest, since few-shot GPT-3 relies on the
+                selection of in-context examples, its performance is unstable and can degrade to near chance. The
+                unstable issue is more severe when handling complex problems like TabMWP. To mitigate this, we further
+                propose a novel approach, <strong>PromptPG</strong>, which utilizes <strong>policy gradient</strong> to
+                learn to <strong>select
+                    in-context
+                    examples</strong> from a small amount of training data and then constructs the corresponding prompt
+                for
+                the test
+                example. Experimental results show that our method outperforms the best baseline by
+                <strong>5.31%</strong> on the
+                accuracy metric and reduces the prediction variance significantly compared to random selection, which
+                verifies its effectiveness in the selection of in-context examples.
             </p>
 
         </div>
@@ -85,41 +99,35 @@
         <!-- <hr> -->
         <div class="section">
             <div id="dataset" class="anchor"></div>
-            <h1>PromptPG Dataset</h1>
+            <h1>TabMWP Dataset</h1>
             <p>
-                PromptPG is collected from elementary and high school science curricula, and contains 21,208 multimodal
-                multiple-choice science questions.
-
-                Out of the questions in PromptPG, 10,332 (48.7%) have an image context, 10,220 (48.2%)
-                have a text context, and 6,532 (30.8%) have both.
-                Most questions are annotated with grounded lectures (83.9%) and detailed explanations
-                (90.5%).
-                The lecture and explanation provide
-                general external knowledge and specific reasons, respectively, for arriving at the correct answer.
-
-                To the best of our knowledge, PromptPG
-                is the first large-scale multimodal dataset that annotates lectures and explanations for the answers.
-            </p>
-            <p>
-                PromptPG, in contrast to previous datasets,
-                has richer domain diversity from three subjects: <strong>natural science</strong>,
-                <strong>language science</strong>, and
-                <strong>social science</strong>.
-
-                Questions in each subject are categorized first by the topic
-                (<i>Biology</i>, <i>Physics</i>, <i>Chemistry</i>, etc.), then by the category (<i>Plants</i>,
-                <i>Cells</i>, <i>Animals</i>,
-                etc.), and finally by the skill (<i>Classify fruits and vegetables as plant parts</i>, <i>Identify
-                    countries of Africa</i>, etc.).
-                PromptPG features 26 topics, 127 categories, and 379 skills that cover a wide range of domains.
+                Below are two examples from the TabMWP dataset. One example is a free-text problem with a
+                numerical answer and the other one is a multi-choice problem with a textual answer.
             </p>
             <div id="example-box">
-                <img class="example-img" src="img/domains.png" style="width: 98%" alt="domains.png" />
+                <img class="example-img" src="img/dataset.png" alt="PromptPG.png">
             </div>
             <p>
-                For more details, you can explore the datatset and check the visualizations here:
-                <a class="ext-link" href="https://PromptPG.github.io/explore.html">Explore</a> and
-                <a class="ext-link" href="https://PromptPG.github.io/visualization.html">Visualizations</a>.
+                The TabMWP dataset contains 38,431 tabular math word problems. 74.7% of the questions in TabMWP belong
+                to <i>free-text</i> questions, while
+                25.3% are <i>multi-choice</i> questions. There are 28,876 different questions, 6,153 different answers,
+                and
+                35,442 different solutions, indicating that TabMWP has a rich diversity in the problem distribution. The
+                questions have an average of 22.1 words in length and solutions of 49.5, showing that they have lexical
+                richness.
+                One distinct characteristic of TabMWP is that each
+                problem is accompanied by a <i>tabular context</i>, without
+                which the problem would be unsolvable. There are
+                37,644 different tables in total. The table has an average of 5.9 rows and
+                2.2 columns, which results in an average of 12.9 cells
+                and a maximum of 54 cells. These statistics suggest
+                that tables in TabMWP distribute diversely across semantics and layouts.
+            </p>
+
+            <p>
+                For more details, you can explore the datatset and check out the
+                <a class="ext-link" href="https://PromptPG.github.io/explore.html">Explore</a> page and
+                <a class="ext-link" href="https://PromptPG.github.io/visualize.html">Visualize</a> page!
             </p>
             <p>
                 Our dataset is distributed under the
@@ -132,9 +140,7 @@
                 </a>
                 (S3) or -->
                 <a href="https://drive.google.com/drive/folders/1w8imCXWYn2LxajmGeGH_g5DaL2rabHev" class="ext-link">
-                    PromptPG
-                </a>
-                (Google Drive), or check out our
+                    Google Drive</a>, or check out our
                 <a href="https://github.com/lupantech/PromptPG" class="ext-link" target="blank">github
                     repository</a>.
             </p>
@@ -145,12 +151,26 @@
             <div id="method" class="anchor"></div>
             <h1>Method</h1>
             <p>
-                We build a few-shot GPT-3 model via chain-of-thought (CoT) prompting to generate the answer followed
-                by the lecture and the explanations.
+                Given a tabular context and question text, the task is to generate an answer. The large pre-trained
+                language model GPT-3 model exhibits strong performance on solving math word problems with the
+                demonstrations of a few in-context examples.
+                However, recent studies have shown that this
+                type of few-shot learning can be highly unstable across different selections of in-context examples.
+                It could be worse on TabMWP since its problems are distributed across multiple question types and
+                diverse table layouts.
             </p>
-
+            <p>
+                To alleviate this challenge, we further propose a novel approach that can learn to select in-context
+                examples from a small amount of training data via <strong>policy Gradient</strong> for prompt
+                learning, termed
+                PromptPG.
+                An agent learns to find optimal in-context examples from a candidate pool,
+                with the goal of maximizing the prediction rewards on given training examples when interacting with
+                the
+                GPT-3 environment.
+            </p>
             <div id="example-box">
-                <img class="example-img" src="img/prompt.png" style="width: 90%" alt="prompt.png" />
+                <img class="example-img" src="img/algorithm.png" style="width: 90%" alt="prompt.png" />
             </div>
             <p>
                 The few-shot GPT-3 model (CoT) achieves a state-of-the-art accuracy of 75.17% on PromptPG.
@@ -158,11 +178,20 @@
                 predicts the correct answer and generates a reasonable lecture and explanation to mimic the human
                 thought process.
             </p>
-            <div id="example-box">
-                <img class="example-img" src="img/prediction.png" style="width: 98%" alt="prediction.png" />
-            </div>
-
             <p>
+                Below shows the <a class="correct">correct</a> prediction from the few-shot GPT-3 model with PromptPG
+                for a free-text question
+                example. This example
+                requires looking
+                up three items and their corresponding prices in the table, calculating their
+                costs, and finally summing them up to get the final answer.
+            </p>
+            <div id="example-box">
+                <img class="example-img" src="img/prediction.png" style="width: 90%" alt="prompt.png" />
+            </div>
+            <p>
+                For more examples of the successful and failuare cases, you check out the
+                <a class="ext-link" href="https://PromptPG.github.io/visualize.html">Visualize</a> page.
                 The results of other baselines and recent work are reported at the <a
                     href="https://PromptPG.github.io/leaderboard.html" class="ext-link" target="blank">Leaderboard</a>
                 page.
@@ -288,7 +317,7 @@
         <div class="section" id="contact">
             <h1>Contact</h1>
             <p>
-                Questions about PromptPG, or want to get in touch? Contact Pan Lu at
+                Questions about our work, or want to get in touch? Contact Pan Lu at
                 <a href="https://lupantech.github.io/" target="blank" class="ext-link">the contact page</a>, or open
                 up an issue on
                 <a href="https://github.com/lupantech/PromptPG/issues" target="blank" class="ext-link">Github</a>.
@@ -308,7 +337,7 @@
                             </td>
                             <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
                             <td>
-                                <a href="https://www.asu.edu/" target="blank" class="ext-link">
+                                <a href="https://www.gatech.edu/" target="blank" class="ext-link">
                                     <img class="center-block" src="img/GT.png" style="height:4em; max-width: 100%;">
                                 </a>
                             <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>

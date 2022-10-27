@@ -23,6 +23,7 @@
         <div>
             <a class="nav-button" href="index.html#home">Home</a>
             <a class="nav-button" href="index.html#dataset">Dataset</a>
+            <a class="nav-button" href="index.html#method">Method</a>
             <a class="nav-button" href="index.html#paper">Paper</a>
             <a class="nav-button" href="index.html#code">Code</a>
             <a class="nav-button" href="index.html#citation">Citation</a>
@@ -43,7 +44,7 @@
             </p>
             <p>
                 &#128512 You are welcome to contribute your results to the TabMWP test split! Please fill in this
-                <a href="https://forms.gle/iwEMepqowMkknNvb8" class="ext-link">Google Form
+                <a href="https://forms.gle/mRv6CBe1MDh3m47ZA" class="ext-link">Google Form
                 </a> to submit your results.
             </p>
 
@@ -53,161 +54,334 @@
                 <tr>
                     <td class="js-sort-number"><strong>Rank</strong></td>
                     <td class="js-sort-number"><strong>Method</strong></td>
-                    <!-- <td class="js-sort-number"><strong>Learning</strong></td> -->
                     <td class="js-sort-number"><strong>Sources</strong></td>
                     <td class="js-sort-number"><strong>Date</strong></td>
-                    <td class="js-sort-number"><strong>NAT</strong></td>
-                    <td class="js-sort-number"><strong>SOC</strong></td>
-                    <td class="js-sort-number"><strong>LAN</strong></td>
-                    <td class="js-sort-number"><strong>TXT</strong></td>
-                    <td class="js-sort-number"><strong>IMG</strong></td>
-                    <td class="js-sort-number"><strong>NO</strong></td>
-                    <td class="js-sort-number"><strong>G1-6</strong></td>
-                    <td class="js-sort-number"><strong>G7-12</strong></td>
+                    <td class="js-sort-number"><strong>FREE</strong></td>
+                    <td class="js-sort-number"><strong>MC</strong></td>
+                    <td class="js-sort-number"><strong>INT</strong></td>
+                    <td class="js-sort-number"><strong>DEC</strong></td>
+                    <td class="js-sort-number"><strong>EXTR</strong></td>
+                    <td class="js-sort-number"><strong>BOOL</strong></td>
+                    <td class="js-sort-number"><strong>OTH</strong></td>
                     <td class="js-sort-number"><strong><u>Avg</u></strong></td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td style="text-align: left;">Human</td>
-                    <!-- <td>-</td> -->
+                    <td style="text-align: center;"><strong>Heuristic guess</strong></td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>90.23</td>
-                    <td>84.97</td>
-                    <td>87.48</td>
-                    <td>89.60</td>
-                    <td>87.50</td>
-                    <td>88.10</td>
-                    <td>91.59</td>
-                    <td>82.42</td>
-                    <td>88.40</td>
+                    <td>6.71</td>
+                    <td>39.81</td>
+                    <td>8.37</td>
+                    <td>0.26</td>
+                    <td>30.80</td>
+                    <td>51.22</td>
+                    <td>26.67</td>
+                    <td>15.29</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td style="text-align: left;"><strong>GPT-3 - CoT</strong> (QCM→ALE, 2-shot)</td>
-                    <!-- <td>2-shot</td> -->
+                    <td style="text-align: center;"><strong>Human</strong></td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>75.44</td>
-                    <td>70.87</td>
-                    <td>78.09</td>
-                    <td>74.68</td>
-                    <td>67.43</td>
-                    <td>79.93</td>
-                    <td>78.23</td>
-                    <td>69.68</td>
-                    <td>75.17</td>
+                    <td>84.61</td>
+                    <td>93.32</td>
+                    <td>84.95</td>
+                    <td>83.29</td>
+                    <td>97.18</td>
+                    <td>88.69</td>
+                    <td>96.20</td>
+                    <td>90.22</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td style="text-align: left;"><strong>GPT-3 - CoT</strong> (QCM→A, 2-shot)</td>
-                    <!-- <td>2-shot</td> -->
+                    <td style="text-align: center;"><strong>UnifiedQA_Small</strong><br>(pre-trained)</td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>76.60</td>
-                    <td>65.92</td>
-                    <td>77.55</td>
-                    <td>75.51</td>
-                    <td>66.09</td>
-                    <td>79.58</td>
-                    <td>78.49</td>
-                    <td>67.63</td>
-                    <td>74.61</td>
+                    <td>1.18</td>
+                    <td>43.62</td>
+                    <td>1.37</td>
+                    <td>0.43</td>
+                    <td>38.70</td>
+                    <td>49.78</td>
+                    <td>37.14</td>
+                    <td>12.18</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td style="text-align: left;"><strong>GPT-3</strong> (QCM→A, 2-shot)</td>
-                    <!-- <td>2-shot</td> -->
+                    <td style="text-align: center;"><strong>UnifiedQA_Base</strong><br>(pre-trained)</td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>74.64</td>
-                    <td>69.74</td>
-                    <td>76.00</td>
-                    <td>74.44</td>
-                    <td>67.28</td>
-                    <td>77.42</td>
-                    <td>76.80</td>
-                    <td>68.89</td>
-                    <td>73.97</td>
+                    <td>4.60</td>
+                    <td>43.02</td>
+                    <td>5.28</td>
+                    <td>1.97</td>
+                    <td>37.08</td>
+                    <td>50.11</td>
+                    <td>38.10</td>
+                    <td>14.56</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td style="text-align: left;"><strong>GPT-3</strong> (QCM→A, zero-shot)</td>
-                    <!-- <td>zero-shot</td> -->
+                    <td style="text-align: center;"><strong>UnifiedQA_Large</strong><br>(pre-trained)</td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>75.04</td>
-                    <td>66.59</td>
-                    <td>78.00</td>
-                    <td>74.24</td>
-                    <td>65.74</td>
-                    <td>79.58</td>
-                    <td>76.36</td>
-                    <td>69.87</td>
-                    <td>74.04</td>
+                    <td>4.48</td>
+                    <td>48.80</td>
+                    <td>5.19</td>
+                    <td>1.72</td>
+                    <td>48.33</td>
+                    <td>50.33</td>
+                    <td>40.00</td>
+                    <td>15.96</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td style="text-align: left;">Random chance</td>
-                    <!-- <td>-</td> -->
+                    <td style="text-align: center;"><strong>TAPEX_Base</strong><br>(pre-trained)</td>
                     <td>
-                        <a href="https://arxiv.org/abs/2209.09513" class="ext-link" style="font-size: 16px;">
-                            Pan et al., NeurIPS 2022
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
                         </a>
                     </td>
                     <td>Sep-2022</td>
-                    <td>40.28</td>
-                    <td>46.13</td>
-                    <td>29.25</td>
-                    <td>47.45</td>
-                    <td>40.08</td>
-                    <td>33.66</td>
-                    <td>39.35</td>
-                    <td>40.67</td>
-                    <td>39.83</td>
+                    <td>7.32</td>
+                    <td>39.76</td>
+                    <td>8.68</td>
+                    <td>2.06</td>
+                    <td>35.06</td>
+                    <td>47.11</td>
+                    <td>20.95</td>
+                    <td>15.73</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td style="text-align: center;"><strong>TAPEX_Large</strong><br>(pre-trained)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>8.80</td>
+                    <td>46.59</td>
+                    <td>10.62</td>
+                    <td>1.72</td>
+                    <td>46.91</td>
+                    <td>48.11</td>
+                    <td>30.48</td>
+                    <td>18.59</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Small</strong><br>(fine-tuned)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>22.27</td>
+                    <td>51.31</td>
+                    <td>27.27</td>
+                    <td>2.83</td>
+                    <td>52.28</td>
+                    <td>48.11</td>
+                    <td>69.52</td>
+                    <td>29.79</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Base</strong><br>(fine-tuned)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>34.02</td>
+                    <td>70.68</td>
+                    <td>40.74</td>
+                    <td>7.90</td>
+                    <td>84.09</td>
+                    <td>55.67</td>
+                    <td>73.33</td>
+                    <td>43.52</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Large</strong><br>(fine-tuned)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>48.67</td>
+                    <td>82.18</td>
+                    <td>55.97</td>
+                    <td>20.26</td>
+                    <td>94.63</td>
+                    <td>68.89</td>
+                    <td>79.05</td>
+                    <td>57.35</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td style="text-align: center;"><strong>TAPEX_Base</strong><br>(fine-tuned)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>39.59</td>
+                    <td>73.09</td>
+                    <td>46.85</td>
+                    <td>11.33</td>
+                    <td>84.19</td>
+                    <td>61.33</td>
+                    <td>69.52</td>
+                    <td>48.27</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td style="text-align: center;"><strong>TAPEX_Large</strong><br>(fine-tuned)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>51.00</td>
+                    <td>80.02</td>
+                    <td>59.92</td>
+                    <td>16.31</td>
+                    <td>95.34</td>
+                    <td>64.00</td>
+                    <td>73.33</td>
+                    <td>58.52</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td style="text-align: center;"><strong>Zero-shot GPT-3</strong></td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>53.57</td>
+                    <td>66.67</td>
+                    <td>55.55</td>
+                    <td>45.84</td>
+                    <td>78.22</td>
+                    <td>55.44</td>
+                    <td>54.29</td>
+                    <td>56.96</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td style="text-align: center;"><strong>Zero-shot-CoT GPT-3</strong></td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>54.36</td>
+                    <td>66.92</td>
+                    <td>55.82</td>
+                    <td>48.67</td>
+                    <td>78.82</td>
+                    <td>55.67</td>
+                    <td>51.43</td>
+                    <td>57.61</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td style="text-align: center;"><strong>Few-shot GPT-3</strong><br>(2-shot)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>54.69</td>
+                    <td>64.11</td>
+                    <td>58.36</td>
+                    <td>40.40</td>
+                    <td>75.95</td>
+                    <td>52.41</td>
+                    <td>53.02</td>
+                    <td>57.13</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td style="text-align: center;"><strong>Few-shot-CoT GPT-3</strong><br>(2-shot)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>60.76</td>
+                    <td>69.09</td>
+                    <td>60.04</td>
+                    <td>63.58</td>
+                    <td>76.49</td>
+                    <td>61.19</td>
+                    <td>67.30</td>
+                    <td>62.92</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td style="text-align: center;"><strong>Few-shot-CoT GPT-3 + PromptPG</strong><br>(2-shot)</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
+                            Pan et al., Preprint
+                        </a>
+                    </td>
+                    <td>Sep-2022</td>
+                    <td>66.17</td>
+                    <td>74.11</td>
+                    <td>64.12</td>
+                    <td>74.16</td>
+                    <td>76.19</td>
+                    <td>72.81</td>
+                    <td>65.71</td>
+                    <td>68.23</td>
                 </tr>
             </table>
             <p>
-                <strong>Method names:</strong>
-                <li>Q = question</li>
-                <li>C = context</li>
-                <li>M = multiple options</li>
-                <li>A = answer</li>
-                <li>AE = answer with explanation</li>
-                <li>ALE = answer with lecture and explanation</li>
-                </li>
-            </p>
-            <p>
-                <strong>Accuracies for different question sets:</strong>
-                <li>NAT: questions of the natural science subject</li>
-                <li>SOC: questions of the social science subject</li>
-                <li>LAN: questions of the language science subject</li>
-                <li>TXT: questions with the text context</li>
-                <li>IMG: questions with the image context</li>
-                <li>NO: questions with no context</li>
-                <li>G1-6: questions in the grade group of 1-6</li>
-                <li>G7-12: questions in the grade group of 7-12</li>
-                <li>Avg: all questions (reporting the average accuracy)</li>
+                <strong>Accuracies for different question types:</strong>
+                <li><strong>FREE</strong>: free-text questions</li>
+                <li><strong>MC</strong>: multi-choice questions</li>
+                <li><strong>INT</strong>: questions with integer answers</li>
+                <li><strong>DEC</strong>: questions with decimal answers</li>
+                <li><strong>EXTR</strong>: questions with extractive text answers</li>
+                <li><strong>BOOL</strong>: questions with Boolean text answers</li>
+                <li><strong>OTH</strong>: questions with other text answers</li>
+                <li><strong>Avg</strong>: all problems (reporting the average accuracy)</li>
                 </li>
             </p>
         </div>
