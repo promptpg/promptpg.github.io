@@ -111,17 +111,13 @@ input[type=button] {
     margin: 50px 0;
 }
 
-.question-title {
-    vertical-align: middle;
-}
-
 .question-txt {
     overflow-y: hidden;
-    color: blue;
+    /* color: blue; */
 }
 
-.hint-txt {
-    margin-bottom: 2px;
+.table-txt {
+    white-space: pre-wrap;
 }
 
 .question-img {
@@ -156,6 +152,10 @@ input[type=button] {
 .answer-txt {
     color: green;
     font-weight: bold;
+}
+
+.solution-txt {
+    white-space: pre-wrap;
 }
 
 .optbox {
