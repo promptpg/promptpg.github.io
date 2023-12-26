@@ -28,7 +28,9 @@ table#results.js-sort-7 tbody tr td:nth-child(8),
 table#results.js-sort-8 tbody tr td:nth-child(9),
 table#results.js-sort-9 tbody tr td:nth-child(10),
 table#results.js-sort-10 tbody tr td:nth-child(11),
-table#results.js-sort-11 tbody tr td:nth-child(12) {
+table#results.js-sort-11 tbody tr td:nth-child(12),
+table#results.js-sort-12 tbody tr td:nth-child(13),
+table#results.js-sort-13 tbody tr td:nth-child(14) {
     background: #dee;
 }
 
@@ -73,4 +75,9 @@ table#results.js-sort-11 tbody tr td:nth-child(12) {
 .js-sort-number:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.best-score-text {
+    color: #C6011F
+    /* color: #3457D5 */
 }
