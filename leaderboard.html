@@ -39,13 +39,13 @@
         <div class="section">
             <h1>Leaderboard - TabMWP</h1>
             <p>
-                Evaluation of different menthods on the <strong>test</strong> split.
-                The accuracies over different classes and on average are reported below.
+                Evaluation of different methods on the <strong>test</strong> split (whole: 7,686 examples; mini: 1,000 examples).
+                The accuracies across various categories and the overall average are reported below.
             </p>
             <p>
-                &#128512 You are welcome to contribute your results to the TabMWP test split! Please fill in this
-                <a href="https://forms.gle/mRv6CBe1MDh3m47ZA" class="ext-link">Google Form
-                </a> to submit your results.
+                &#128512 You are invited to contribute your results to the TabMWP test split! 
+                Please send your result scores to <a href="mailto:lupantech@gmail.com" class="ext-link">this email</a> or open a new issue at the <a href="https://github.com/lupantech/PromptPG/issues" class="ext-link">github repository</a>.
+                <!-- Please fill in this <a href="https://forms.gle/mRv6CBe1MDh3m47ZA" class="ext-link">Google Form </a> to submit your results. -->
             </p>
 
 
@@ -1068,6 +1068,18 @@
                 </tr>
             </table>
             <p>
+                <strong>Table formats</strong>
+                <li><strong>Image</strong>: taking the image format of the table as the input</li>
+                <li><strong>Text-GT</strong>: taking the textual ground truth parsed format of the table as the input</li>
+            </p>
+            <p>
+                <strong>Model types</strong>
+                <li><strong>PLM</strong>: pre-trained language model</li>
+                <li><strong>CoT</strong>: chain-of-thought prompting large language mode</li>
+                <li><strong>Code</strong>: code-augmented large language model</li>
+                <li><strong>Tool</strong>: tool-augmented large langauge model</li>
+            </p>
+            <p>
                 <strong>Accuracies for different question types:</strong>
                 <li><strong>Avg</strong>: all problems (reporting the average accuracy)</li>
                 <li><strong>FREE</strong>: free-text questions</li>
@@ -1077,7 +1089,6 @@
                 <li><strong>EXTR</strong>: questions with extractive text answers</li>
                 <li><strong>BOOL</strong>: questions with Boolean text answers</li>
                 <li><strong>OTH</strong>: questions with other text answers</li>
-                </li>
             </p>
         </div>
     </div>
