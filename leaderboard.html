@@ -54,8 +54,9 @@
                 <tr>
                     <td class="js-sort"><strong>#</strong></td>
                     <td class="js-sort"><strong>Model</strong></td>
-                    <td class="js-sort"><strong>Method</strong></td>
                     <td class="js-sort"><strong>Table</strong></td>
+                    <td class="js-sort"><strong>Method</strong></td>
+                    <td class="js-sort"><strong>Type</strong></td>
                     <td class="js-sort"><strong>Source</strong></td>
                     <td class="js-sort"><strong>Date</strong></td>
                     <td class="js-sort-number"><strong><u>Avg</u></strong></td>
@@ -70,14 +71,15 @@
                 <tr>
                     <td>*</td>
                     <td style="text-align: center;"><strong>Human Performance</strong></td>
-                    <td style="text-align: center;">-</td>
                     <td style="text-align: center;">Image</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>90.22</strong></td>
                     <td>84.61</td>
                     <td>93.32</td>
@@ -90,14 +92,15 @@
                 <tr>
                     <td>1</td>
                     <td style="text-align: center;"><strong class="best-score-text">Chameleon (GPT-4) 🥇</strong></td>
-                    <td style="text-align: center;">Tool Use</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
+                    <td>23-04-19</td>
                     <td><strong class="best-score-text">98.78</strong></td> <!-- ALL -->
                     <td>98.95</td> <!-- FREE -->     
                     <td>98.29</td> <!-- MC -->
@@ -110,14 +113,15 @@
                 <tr>
                     <td>2</td>
                     <td style="text-align: center;"><strong class="best-score-text">PoT GPT-4 🥈</strong></td>
-                    <td style="text-align: center;">4-shot</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (4)</td>
+                    <td style="text-align: center;">Code</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
+                    <td>23-04-19</td>
                     <td><strong class="best-score-text">96.93</strong></td> <!-- ALL -->
                     <td>97.40</td> <!-- FREE -->       
                     <td>95.58</td> <!-- MC -->
@@ -129,16 +133,36 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td style="text-align: center;"><strong class="best-score-text">Chameleon (ChatGPT) 🥉</strong></td>
-                    <td style="text-align: center;">Tool Use</td>
+                    <td style="text-align: center;"><strong class="best-score-text">CREATOR (ChatGPT) 🥉</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2305.14318" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-05-23</td>
+                    <td><strong class="best-score-text">94.7</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">Chameleon (ChatGPT)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
-                    <td><strong class="best-score-text">93.28</strong></td> <!-- ALL -->
+                    <td>23-04-19</td>
+                    <td><strong class="highlight-score-text">93.28</strong></td> <!-- ALL -->
                     <td>93.13</td> <!-- FREE -->
                     <td>93.72</td> <!-- MC -->
                     <td>92.71</td> <!-- INT -->
@@ -148,15 +172,16 @@
                     <td>78.85</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td style="text-align: center;"><strong>TaCo (TAPEX-large)</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>5</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">TaCo (TAPEX-large)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://aclanthology.org/2023.findings-emnlp.734/" class="ext-link" style="font-size: 16px;">Link</a>
                     </td>
-                    <td>2023-12-06</td>
-                    <td><strong>92.91</strong></td> <!-- ALL -->
+                    <td>23-12-06</td>
+                    <td><strong class="highlight-score-text">92.91</strong></td> <!-- ALL -->
                     <td>91.69</td> <!-- FREE -->            
                     <td>93.47</td> <!-- MC -->
                     <td>92.54</td> <!-- INT -->
@@ -166,17 +191,37 @@
                     <td>86.67</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>5</td>
-                    <td style="text-align: center;"><strong>CoT GPT-4</strong></td>
-                    <td style="text-align: center;">8-shot</td>
+                    <td>6</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">PoT ChatGPT + Doc</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Zero-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2308.00675" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-08-01</td>
+                    <td><strong class="highlight-score-text">92.69</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">CoT GPT-4</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (8)</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
-                    <td><strong>90.81</strong></td> <!-- ALL -->
+                    <td>23-04-19</td>
+                    <td><strong class="highlight-score-text">90.81</strong></td> <!-- ALL -->
                     <td>88.48</td> <!-- FREE --> 
                     <td>97.49</td> <!-- MC -->
                     <td>86.16</td> <!-- INT -->
@@ -186,16 +231,36 @@
                     <td>89.52</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>6</td>
-                    <td style="text-align: center;"><strong>PoT ChatGPT</strong></td>
-                    <td style="text-align: center;">4-shot</td>
+                    <td>8</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">CoS-Planning (ChatGPT)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2310.05155" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-10-08</td>
+                    <td><strong class="highlight-score-text">90.00</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td style="text-align: center;"><strong>PoT ChatGPT</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (4)</td>
+                    <td style="text-align: center;">Code</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
+                    <td>23-04-19</td>
                     <td><strong>89.49</strong></td> <!-- ALL -->
                     <td>90.24</td> <!-- FREE -->
                     <td>87.35</td> <!-- MC -->
@@ -206,14 +271,53 @@
                     <td>55.24</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td style="text-align: center;"><strong>RetICL</strong></td>
-                    <td style="text-align: center;">Few-shot</td>
+                    <td>10</td>
+                    <td style="text-align: center;"><strong>BM25 (ChatGPT)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17428" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>89.2</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td style="text-align: center;"><strong>CRITIC (ChatGPT)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2305.11738" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-30</td>
+                    <td><strong>89.0</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td style="text-align: center;"><strong>RetICL (Codex)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2305.14502" class="ext-link" style="font-size: 16px;">Link</a>
                     </td>
-                    <td>2023-05-23</td>
+                    <td>23-05-23</td>
                     <td><strong>88.51</strong></td> <!-- ALL -->
                     <td>-</td> <!-- FREE -->            
                     <td>-</td> <!-- MC -->
@@ -224,14 +328,53 @@
                     <td>-</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>8</td>
-                    <td style="text-align: center;"><strong>TaCo (TAPEX-base)</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>13</td>
+                    <td style="text-align: center;"><strong>CRAFT (ChatGPT)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17428" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>88.4</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td style="text-align: center;"><strong>CRITIC (GPT-3)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2305.11738" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-30</td>
+                    <td><strong>87.6</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td style="text-align: center;"><strong>TaCo (TAPEX-base)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://aclanthology.org/2023.findings-emnlp.734/" class="ext-link" style="font-size: 16px;">Link</a>
                     </td>
-                    <td>2023-12-06</td>
+                    <td>23-12-06</td>
                     <td><strong>86.12</strong></td> <!-- ALL -->
                     <td>85.53</td> <!-- FREE -->            
                     <td>85.74</td> <!-- MC -->
@@ -242,16 +385,36 @@
                     <td>81.90</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>9</td>
-                    <td style="text-align: center;"><strong>CoT ChatGPT</strong></td>
-                    <td style="text-align: center;">8-shot</td>
+                    <td>16</td>
+                    <td style="text-align: center;"><strong>SimCSE (ChatGPT)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17428" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>83.8</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td style="text-align: center;"><strong>CoT ChatGPT</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (8)</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2304.09842" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2023-04-19</td>
+                    <td>23-04-19</td>
                     <td><strong>82.03</strong></td> <!-- ALL -->
                     <td>78.43</td> <!-- FREE -->
                     <td>92.32</td> <!-- MC -->
@@ -262,16 +425,17 @@
                     <td>87.62</td> <!-- OTH -->
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>18</td>
                     <td style="text-align: center;"><strong>PoT-SC Codex</strong></td>
-                    <td style="text-align: center;">4-shot</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (4)</td>
+                    <td style="text-align: center;">Code</td>
                     <td>
                         <a href="https://arxiv.org/abs/2211.12588" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-11-22</td>
+                    <td>22-11-22</td>
                     <td><strong>81.8</strong></td>
                     <td>79.5</td>
                     <td>88.4</td>
@@ -282,16 +446,93 @@
                     <td>48.6</td>
                 </tr>
                 <tr>
-                    <td>11</td>
-                    <td style="text-align: center;"><strong>CoT GPT-3 + PromptPG</strong></td>
-                    <td style="text-align: center;">2-shot</td>
+                    <td>19</td>
+                    <td style="text-align: center;"><strong>SEGSBS-PAL (Codex)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2305.00633" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-05-01</td>
+                    <td><strong>80.9</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">CRITIC (LLaMA-2-70B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2305.11738" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-30</td>
+                    <td><strong class="highlight-score-text">75.0</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">ToRA (70B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong class="highlight-score-text">74.0</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">ToRA-Code (34B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong class="highlight-score-text">70.5</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td style="text-align: center;"><strong>CoT GPT-3 + PromptPG</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (2)</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>68.23</strong></td>
                     <td>66.17</td>
                     <td>74.11</td>
@@ -302,16 +543,55 @@
                     <td>65.71</td>
                 </tr>
                 <tr>
-                    <td>12</td>
-                    <td style="text-align: center;"><strong>CoT GPT-3</strong></td>
-                    <td style="text-align: center;">2-shot</td>
+                    <td>24</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">ToRA-Code (13B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong class="highlight-score-text">65.4</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td style="text-align: center;"><strong>CodeLLaMA (PAL) (34B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>63.1</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td style="text-align: center;"><strong>CoT GPT-3</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (2)</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>60.76</strong></td>
                     <td>69.09</td>
                     <td>60.04</td>
@@ -322,16 +602,55 @@
                     <td>62.92</td>
                 </tr>
                 <tr>
-                    <td>13</td>
-                    <td style="text-align: center;"><strong>TAPEX_Large</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>27</td>
+                    <td style="text-align: center;"><strong>CodeLLaMA (PAL) (13B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>59.5</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td style="text-align: center;"><strong>LLaMA-2 (PAL) (70B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>59.5</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td style="text-align: center;"><strong>TAPEX_Large</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>58.52</strong></td>
                     <td>51.00</td>
                     <td>80.02</td>
@@ -342,16 +661,17 @@
                     <td>73.33</td>
                 </tr>
                 <tr>
-                    <td>14</td>
+                    <td>30</td>
                     <td style="text-align: center;"><strong>CoT GPT-3</strong></td>
-                    <td style="text-align: center;">0-shot</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Zero-shot</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>57.61</strong></td>
                     <td>54.36</td>
                     <td>66.92</td>
@@ -362,16 +682,36 @@
                     <td>51.43</td>
                 </tr>
                 <tr>
-                    <td>15</td>
-                    <td style="text-align: center;"><strong>UnifiedQA_Large</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>31</td>
+                    <td style="text-align: center;"><strong>LLaMA-2 (70B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>57.5</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Large</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>57.35</strong></td>
                     <td>48.67</td>
                     <td>82.18</td>
@@ -382,16 +722,17 @@
                     <td>79.05</td>
                 </tr>
                 <tr>
-                    <td>16</td>
+                    <td>33</td>
                     <td style="text-align: center;"><strong>GPT-3</strong></td>
-                    <td style="text-align: center;">2-shot</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Few-shot (2)</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>57.13</strong></td>
                     <td>54.69</td>
                     <td>64.11</td>
@@ -402,16 +743,17 @@
                     <td>53.02</td>
                 </tr>
                 <tr>
-                    <td>17</td>
+                    <td>34</td>
                     <td style="text-align: center;"><strong>GPT-3</strong></td>
-                    <td style="text-align: center;">0-shot</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Zero-shot</td>
+                    <td style="text-align: center;">CoT</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>56.96</strong></td>
                     <td>53.57</td>
                     <td>66.67</td>
@@ -422,16 +764,36 @@
                     <td>54.29</td>
                 </tr>
                 <tr>
-                    <td>18</td>
-                    <td style="text-align: center;"><strong>TAPEX_Base</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>35</td>
+                    <td style="text-align: center;"><strong class="highlight-score-text">ToRA-Code (7B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong class="highlight-score-text">51.6</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td style="text-align: center;"><strong>TAPEX_Base</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>48.27</strong></td>
                     <td>39.59</td>
                     <td>73.09</td>
@@ -442,16 +804,55 @@
                     <td>69.52</td>
                 </tr>
                 <tr>
-                    <td>19</td>
-                    <td style="text-align: center;"><strong>UnifiedQA_Base</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>37</td>
+                    <td style="text-align: center;"><strong>CodeLLaMA (PAL) (7B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Code</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>47.3</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td style="text-align: center;"><strong>ToRA (13B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>47.2</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Base</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>43.52</strong></td>
                     <td>34.02</td>
                     <td>70.68</td>
@@ -462,16 +863,74 @@
                     <td>73.33</td>
                 </tr>
                 <tr>
-                    <td>20</td>
-                    <td style="text-align: center;"><strong>UnifiedQA_Small</strong></td>
-                    <td style="text-align: center;">Fine-tuned</td>
+                    <td>40</td>
+                    <td style="text-align: center;"><strong>ToRA (7B)</strong></td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">Tool</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>42.4</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td style="text-align: center;"><strong>LLaMA-2 (13B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>39.5</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td style="text-align: center;"><strong>LLaMA-2 (7B)</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2309.17452" class="ext-link" style="font-size: 16px;">Link</a>
+                    </td>
+                    <td>23-09-29</td>
+                    <td><strong>31.1</strong></td> <!-- ALL -->
+                    <td>-</td> <!-- FREE -->            
+                    <td>-</td> <!-- MC -->
+                    <td>-</td> <!-- INT -->
+                    <td>-</td> <!-- DEC -->
+                    <td>-</td> <!-- EXTR -->
+                    <td>-</td> <!-- BOOL -->
+                    <td>-</td> <!-- OTH -->
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td style="text-align: center;"><strong>UnifiedQA_Small</strong></td>
+                    <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Fine-tuned</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>22.27</strong></td>
                     <td>51.31</td>
                     <td>27.27</td>
@@ -482,16 +941,17 @@
                     <td>29.79</td>
                 </tr>
                 <tr>
-                    <td>21</td>
+                    <td>44</td>
                     <td style="text-align: center;"><strong>TAPEX_Large</strong></td>
-                    <td style="text-align: center;">Pre-trained</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Pre-trained</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>18.59</strong></td>
                     <td>8.80</td>
                     <td>46.59</td>
@@ -502,16 +962,17 @@
                     <td>30.48</td>
                 </tr>
                 <tr>
-                    <td>22</td>
+                    <td>45</td>
                     <td style="text-align: center;"><strong>UnifiedQA_Large</strong></td>
-                    <td style="text-align: center;">Pre-trained</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Pre-trained</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>15.96</strong></td>
                     <td>4.48</td>
                     <td>48.80</td>
@@ -522,16 +983,17 @@
                     <td>40.00</td>
                 </tr>
                 <tr>
-                    <td>23</td>
+                    <td>46</td>
                     <td style="text-align: center;"><strong>TAPEX_Base</strong></td>
-                    <td style="text-align: center;">Pre-trained</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Pre-trained</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>15.73</strong></td>
                     <td>7.32</td>
                     <td>39.76</td>
@@ -542,16 +1004,17 @@
                     <td>20.95</td>
                 </tr>
                 <tr>
-                    <td>24</td>
+                    <td>47</td>
                     <td style="text-align: center;"><strong>UnifiedQA_Base</strong></td>
-                    <td style="text-align: center;">Pre-trained</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Pre-trained</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>14.56</strong></td>
                     <td>4.60</td>
                     <td>43.02</td>
@@ -562,16 +1025,17 @@
                     <td>38.10</td>
                 </tr>
                 <tr>
-                    <td>25</td>
+                    <td>48</td>
                     <td style="text-align: center;"><strong>UnifiedQA_Small</strong></td>
-                    <td style="text-align: center;">Pre-trained</td>
                     <td style="text-align: center;">Text-GT</td>
+                    <td style="text-align: center;">Pre-trained</td>
+                    <td style="text-align: center;">PLM</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>12.18</strong></td>
                     <td>1.18</td>
                     <td>43.62</td>
@@ -586,12 +1050,13 @@
                     <td style="text-align: center;"><strong>Heuristic Guess</strong></td>
                     <td style="text-align: center;">-</td>
                     <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
                     <td>
                         <a href="https://arxiv.org/abs/2209.14610" class="ext-link" style="font-size: 16px;">
                             Link
                         </a>
                     </td>
-                    <td>2022-09-29</td>
+                    <td>22-09-29</td>
                     <td><strong>15.29</strong></td>
                     <td>6.71</td>
                     <td>39.81</td>
